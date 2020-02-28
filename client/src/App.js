@@ -9,10 +9,8 @@ import BubblePage from "./components/BubblePage";
 function App() {
   return (
     <Router>
-      <div className="App">
         <Route exact path="/" component={Login} />
-        <PrivateRoute path={"/bubbles-page"} component={BubblePage} />
-      </div>
+        <PrivateRoute path={"/bubble-page"} component={BubblePage} />
     </Router>
   );
 }
